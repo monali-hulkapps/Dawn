@@ -1,9 +1,135 @@
+<div data-section-id="{{ section.id }}" class="{%- if section.settings.fluid_layout -%}container-fluid{%- else -%}container{%- endif -%}">
+    <div class="row">
+        <div class="col-md-7 d-flex justify-content-start flex-wrap">      
+            <div class="get-our-content p-5 d-flex justify-content-start flex-column position-relative overflow-hidden w-100  pb-md-20" style="background: {{section.settings.bg_color}}; color: rgb(255, 255, 255);">
+                <div class="white-leaf-2"><img src="https://cdn.shopify.com/s/files/1/1336/5077/files/white-leaf-2.svg?v=1586934833" alt="{{shop.name | escape }}" class="img-fluid" /></div>
+                {% if section.settings.preheading_txt %}<h2 class="font-family-salty text-lowercase h1 font-weight-normal mb-0 pl-2 text-dark" style="color: {{ section.settings.preheading_txt_color }};">{{section.settings.preheading_txt}}</h2>{% endif %}
+              {% if section.settings.heading_txt %}  
+              <div class="d-sm-flex align-items-center flex-wrap pb-0">
+                    <h2 class="mb-0 font-weight-bolder text-dark" style="color: {{ section.settings.heading_txt_color }};">{{section.settings.heading_txt}}</h2>
+                </div>
+              {% endif %}
+            </div>
+        </div>
+
+
+    
+        
+        <div class="col-md-10 mt-md-n17 main-flickity-div customer-testi offset-md-2" data-customer-info>
+             <div class="testimonial_slider1 carousel" data-flickity-options role="tree" data-flickity='{
+                "adaptiveHeight": false,
+                "contain": true,
+                "wrapAround": false,
+                "prevNextButtons": true,
+                "pageDots": true,
+                "arrowShape": {"x0": 10, "x1": 60, "y1": 50, "x2": 60, "y2": 45, "x3": 15}
+                }'>               	
+              {% for block in section.blocks %}
+               	<div class="carousel-cell  testimonial_list col-12 col-md-6 col-lg-4" role="treeitem">
+                        <div class="shadow-1 text-center py-4 px-5 bg-gray-100">
+                            <div class="quote"><img src="https://cdn.shopify.com/s/files/1/1336/5077/files/icon1.svg?v=1626846065" width="40" class="d-block mb-2" height="40"></div>
+                            {%- if block.settings.testimonial -%} <p class="font-weight-medium"> <i>  {{block.settings.testimonial}} </i> </p>{%- endif -%}
+                            {%- if block.settings.title -%}<span class="font-weight-bold"> - {{block.settings.title}} </span>{%- endif -%}
+                        </div>
+                 </div>
+{% endfor %} 
+                    
+                 
+            </div>    
+        </div>
+
+
+    </div>
+</div>
+
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+    {
+        "name": "Testimonials",
+        "class": "index-testimonials mb-md-8 mb-5",
+        "settings": [
+            {
+                "type": "header",
+                "content": "Layout"
+            },
+            {
+                "type": "checkbox",
+                "id": "fluid_layout",
+                "label": "Full Width Layout?",
+                "default": false
+            },
+            {
+                "type": "header",
+                "content": "Content"
+            },
+			{
+                "type": "text",
+                "id": "preheading_txt",
+                "label": "Pre Heading Text",
+                "default": "Surf Subscription Box"
+            },
+            {
+                "type": "text",
+                "id": "heading_txt",
+                "label": "Heading Text",
+                "default": "Who are we"
+            },
+			{
+                "type": "header",
+                "content": "Styling"
+            },
+            {
+                "type": "color",
+                "id": "bg_color",
+                "label": "Background Color",
+                "default": "#cdecf2"
+            },
+			{
+                "type": "color",
+                "id": "preheading_txt_color",
+                "label": "Pre Heading Color"
+            },
+            {
+                "type": "color",
+                "id": "heading_txt_color",
+                "label": "Heading Color"
+            },
+			{
+                "type": "color",
+                "id": "testimonial_txt_color",
+                "label": "Testimonial Color"
+            }
+            
+            
+        ],
+        "blocks": [
+            {
+              "type": "Texts",
+              "name": "Testimonial",
+              "settings": [
+                {
+                  "type": "text",
+                  "id": "title",
+                  "label": "Author"
+                },
+                {
+                  "type": "textarea",
+                  "id": "testimonial",
+                  "label": "Testimonial"
+                }
+              ]
+            }
+          ],	
+        "presets": [
+            {
+                "name": "Testimonials",
+                "category": "Testimonials"
+            }
+        ]
+    }
 {% endschema %}
+
+
+  
 
 {% stylesheet %}
 {% endstylesheet %}
