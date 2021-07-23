@@ -1,4 +1,4 @@
-<script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+
 {% comment %}
     Renders a product card
 
@@ -104,10 +104,10 @@
                     <button
                       type="submit"
                       name="add"
-                      class="product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout and product.selling_plan_groups == empty %}button--secondary{% else %}button--primary{% endif %}"
-                    {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %}
+                      class="product-form__submit button button--full-width button--primary"
+                    {% if product_card_product.selected_or_first_available_variant.available == false %}disabled{% endif %}
                     >
-                        {%- if product.selected_or_first_available_variant.available -%}
+                        {%- if product_card_product.selected_or_first_available_variant.available -%}
                           {{ 'products.product.add_to_cart' | t }}
                         {%- else -%}
                           {{ 'products.product.sold_out' | t }}
