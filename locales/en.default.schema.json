@@ -178,6 +178,11 @@
         "testimonial_txt_color": {
           "label": "Testimonial Color"
         }
+      },
+      "blocks": {
+        "name": "Testimonial",
+        "settings": {
+        }
       }
     },
     "announcement-bar": {
