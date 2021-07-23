@@ -52,6 +52,17 @@
           "enable_language_selector": true,
           "payment_enable": true
         }
+      },
+      "top-bar": {
+        "type": "top-bar",
+        "settings": {
+          "topbar_enabled": true,
+          "topbar_text": "<a href=\"https:\/\/www.waxingpoetic.com\/collections\/sale\"> Free Shipping on all Orders <\/a>",
+          "topbar_bg_color": "#f6f3ec",
+          "topbar_height": 40,
+          "topbar_font_size": 1,
+          "topbar_text_color": "#000000"
+        }
       }
     },
     "content_for_index": [
