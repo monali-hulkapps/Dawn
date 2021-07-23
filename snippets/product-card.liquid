@@ -113,9 +113,7 @@
                           {{ 'products.product.sold_out' | t }}
                         {%- endif -%}
                     </button>
-                    {%- if block.settings.show_dynamic_checkout -%}
-                      {{ form | payment_button }}
-                    {%- endif -%}
+                   
                   </div>
                 {%- endform -%}
               </product-form>
