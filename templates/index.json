@@ -121,12 +121,24 @@
         "button_link": "",
         "swipe_on_mobile": false
       }
+    },
+    "1627026094f9971bbb": {
+      "type": "index-testimonials",
+      "settings": {
+        "preheading_txt": "Surf Subscription Box",
+        "heading_txt": "Who are we",
+        "bg_color": "#cdecf2",
+        "preheading_txt_color": "",
+        "heading_txt_color": "",
+        "testimonial_txt_color": ""
+      }
     }
   },
   "order": [
     "image_banner",
     "featured_products",
     "image_text",
-    "1626955434af142f50"
+    "1626955434af142f50",
+    "1627026094f9971bbb"
   ]
 }
