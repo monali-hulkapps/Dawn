@@ -157,6 +157,11 @@
     }
   },
   "sections": {
+    "top-bar": {
+      "name": "Top Bar",
+      "settings": {
+      }
+    },
     "testimonials": {
       "name": "Testimonials",
       "settings": {
