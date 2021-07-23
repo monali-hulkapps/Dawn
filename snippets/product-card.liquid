@@ -98,7 +98,7 @@
 
         {% render 'price', product: product_card_product, price_class: '' %}
         
-        <variant-radios class="no-js-hidden" {% unless template contains 'collection' %}data-section="{{ section.id }}"{% endunless %} data-url="{{ product_card_product.url }}" >
+        <variant-radios class="no-js-hidden" {% if template contains 'collection' %}data-section="{{ section.id }}"{% else %}data-section="{{ section.id }}"{% endif %} data-url="{{ product_card_product.url }}" >
           {%- for option in product_card_product.options_with_values -%}
           <fieldset class="js product-form__input">
             <legend class="form__label">{{ option.name }}</legend>
