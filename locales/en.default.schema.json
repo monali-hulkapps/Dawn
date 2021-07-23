@@ -182,6 +182,12 @@
       "blocks": {
         "name": "Testimonial",
         "settings": {
+          "title": {
+            "label": "Author"
+          },
+          "testimonial": {
+            "label": "Testimonial"
+          }
         }
       }
     },
