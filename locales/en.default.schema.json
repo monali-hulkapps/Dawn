@@ -157,6 +157,11 @@
     }
   },
   "sections": {
+    "testimonials": {
+      "name": "Announcement bar",
+      "settings": {
+      }
+    },
     "announcement-bar": {
       "name": "Announcement bar",
       "blocks": {
