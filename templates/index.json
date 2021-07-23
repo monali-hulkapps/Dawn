@@ -87,7 +87,7 @@
         "1626955434af142f50-0": {
           "type": "column",
           "settings": {
-            "title": "Column",
+            "title": "Column1",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
           }
         },
@@ -131,10 +131,18 @@
             "title": "Monali",
             "testimonial": "Lorem Ipsum"
           }
+        },
+        "3b89f0b3-ffb0-4060-9c3c-025dcf39c84e": {
+          "type": "Texts",
+          "settings": {
+            "title": "TEst",
+            "testimonial": "lorem ipsum 1hgajd hkh"
+          }
         }
       },
       "block_order": [
-        "bdd7f7ef-1544-4677-8de0-52781891d886"
+        "bdd7f7ef-1544-4677-8de0-52781891d886",
+        "3b89f0b3-ffb0-4060-9c3c-025dcf39c84e"
       ],
       "settings": {
         "preheading_txt": "Surf Subscription Box",
