@@ -158,8 +158,26 @@
   },
   "sections": {
     "testimonials": {
-      "name": "Announcement bar",
+      "name": "Testimonials",
       "settings": {
+        "preheading_txt": {
+          "label": "Pre Heading Text"
+        },
+        "heading_txt": {
+          "label": "Heading Text"
+        },
+        "bg_color": {
+          "label": "Background Color"
+        },
+        "preheading_txt_color": {
+          "label": "Pre Heading Color"
+        },
+        "heading_txt_color": {
+          "label": "Heading Color"
+        },
+        "testimonial_txt_color": {
+          "label": "Testimonial Color"
+        }
       }
     },
     "announcement-bar": {
