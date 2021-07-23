@@ -160,6 +160,24 @@
     "top-bar": {
       "name": "Top Bar",
       "settings": {
+        "topbar_enabled": {
+          "label": "Enabled?"
+        },
+        "topbar_text": {
+          "label": "Message"
+        },
+        "topbar_bg_color": {
+          "label": "Background"
+        },
+        "topbar_height": {
+          "label": "Minimum Height"
+        },
+        "topbar_font_size": {
+          "label": "Font Size"
+        },
+        "topbar_text_color": {
+          "label": "Text Color"
+        }
       }
     },
     "testimonials": {
