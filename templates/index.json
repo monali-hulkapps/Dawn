@@ -124,6 +124,18 @@
     },
     "1627026094f9971bbb": {
       "type": "index-testimonials",
+      "blocks": {
+        "bdd7f7ef-1544-4677-8de0-52781891d886": {
+          "type": "Texts",
+          "settings": {
+            "title": "Monali",
+            "testimonial": "Lorem Ipsum"
+          }
+        }
+      },
+      "block_order": [
+        "bdd7f7ef-1544-4677-8de0-52781891d886"
+      ],
       "settings": {
         "preheading_txt": "Surf Subscription Box",
         "heading_txt": "Who are we",
