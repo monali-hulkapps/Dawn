@@ -41,5 +41,6 @@ class ProductForm extends HTMLElement {
       });
   }
 }
+console.log(ProductForm);
 
 customElements.define('product-form', ProductForm);
