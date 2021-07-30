@@ -17,7 +17,7 @@ class ProductForm extends HTMLElement {
     submitButton.classList.add('loading');
 
     
-    console.log(JSON.parse(serializeForm(this.form)));
+    console.log(`${routes.cart_add_url}`);
     
     const body = JSON.stringify({
       ...JSON.parse(serializeForm(this.form)),
