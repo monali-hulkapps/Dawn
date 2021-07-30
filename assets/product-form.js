@@ -17,6 +17,7 @@ class ProductForm extends HTMLElement {
     submitButton.classList.add('loading');
 
     
+    console.log(JSON.parse(serializeForm(this.form)));
     
     const body = JSON.stringify({
       ...JSON.parse(serializeForm(this.form)),
