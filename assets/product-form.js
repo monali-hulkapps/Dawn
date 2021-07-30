@@ -16,16 +16,11 @@ class ProductForm extends HTMLElement {
     submitButton.setAttribute('disabled', true);
     submitButton.classList.add('loading');
 
-    
-    console.log(`${routes.cart_add_url}`);
-    
     const body = JSON.stringify({
       ...JSON.parse(serializeForm(this.form)),
       sections: this.cartNotification.getSectionsToRender().map((section) => section.id),
       sections_url: window.location.pathname
     });
-    
-    console.log(body);
 
     fetch(`${routes.cart_add_url}`, { ...fetchConfig('javascript'), body })
       .then((response) => response.json())
@@ -41,6 +36,5 @@ class ProductForm extends HTMLElement {
       });
   }
 }
-console.log(ProductForm);
 
 customElements.define('product-form', ProductForm);
