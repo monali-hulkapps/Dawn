@@ -1,4 +1,4 @@
-class ProductForm1 extends HTMLElement {
+class ProductForm extends HTMLElement {
   constructor() {
     super();   
 
@@ -40,4 +40,4 @@ class ProductForm1 extends HTMLElement {
   }
 }
 
-customElements.define('product-form', ProductForm1);
+customElements.define('product-form', ProductForm);
