@@ -25,7 +25,7 @@ class ProductForm extends HTMLElement {
       sections_url: window.location.pathname
     });
 
-    console.log({fetchConfig('javascript'), body});
+    console.log(fetchConfig('javascript'), body);
     fetch(`${routes.cart_add_url}`, { ...fetchConfig('javascript'), body })
       .then((response) => response.json())
       .then((parsedState) => {
