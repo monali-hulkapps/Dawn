@@ -18,7 +18,7 @@ class ProductForm extends HTMLElement {
 
     var properties = {};
     this.form.querySelectorAll('input').forEach(element => {
-    	console.log(element);
+    	console.log(element.getAttribute('name'));
     });
    
     
