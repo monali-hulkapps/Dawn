@@ -31,9 +31,7 @@ class ProductForm extends HTMLElement {
     
     const body = JSON.stringify({
       ...JSON.parse(serializeForm(this.form)),
-      properties: {
-      "Your name": this.querySelector('#your-name').value
-      },
+      properties,
       sections: this.cartNotification.getSectionsToRender().map((section) => section.id),
       sections_url: window.location.pathname
     });
