@@ -16,6 +16,11 @@ class ProductForm extends HTMLElement {
     submitButton.setAttribute('disabled', true);
     submitButton.classList.add('loading');
 
+    var properties = {};
+    this.form.querySelectorAll('input').forEach(element => {
+    	console.log(element);
+    });
+   
     
 //     console.log(JSON.parse(serializeForm(this.form)));
     
