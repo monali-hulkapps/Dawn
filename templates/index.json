@@ -76,9 +76,10 @@
         "button"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/small-business-interior.jpg",
         "height": "adapt",
-        "color_scheme": "background-1",
-        "layout": "image_first"
+        "color_scheme": "background-2",
+        "layout": "text_first"
       }
     },
     "1626955434af142f50": {
