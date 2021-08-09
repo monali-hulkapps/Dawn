@@ -21,7 +21,7 @@ class ProductForm extends HTMLElement {
       if(element.getAttribute('name').indexOf('properties[') > -1){
         let propertyTitle = element.getAttribute('name').replace('properties[','').replace(']','');
         properties = {
-          [propertyTitle]: element.value;
+          [propertyTitle]: element.value
         } 
       }
     });
