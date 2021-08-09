@@ -24,7 +24,7 @@ class ProductForm extends HTMLElement {
       }
     });
    
-    
+    console.log(properties);
 //     console.log(JSON.parse(serializeForm(this.form)));
     
     const body = JSON.stringify({
