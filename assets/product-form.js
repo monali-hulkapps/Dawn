@@ -19,16 +19,10 @@ class ProductForm extends HTMLElement {
     var properties = {};
     this.form.querySelectorAll('input').forEach(element => {
       if(element.getAttribute('name').indexOf('properties[') > -1){
-        let propertyTitle = element.getAttribute('name').replace('properties[','').replace(']','');
-        
-          properties[propertyTitle]= element.value;
-         
+        let propertyTitle = element.getAttribute('name').replace('properties[','').replace(']','');        
+         properties[propertyTitle]= element.value;         
       }
     });
-   
-    console.log(properties);
-//     console.log(JSON.parse(serializeForm(this.form)));
-    
     const body = JSON.stringify({
       ...JSON.parse(serializeForm(this.form)),
       properties:properties,
