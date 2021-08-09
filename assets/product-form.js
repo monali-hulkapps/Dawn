@@ -20,9 +20,9 @@ class ProductForm extends HTMLElement {
     this.form.querySelectorAll('input').forEach(element => {
       if(element.getAttribute('name').indexOf('properties[') > -1){
         let propertyTitle = element.getAttribute('name').replace('properties[','').replace(']','');
-        properties += {
-          [propertyTitle]: element.value
-        } 
+        
+          properties[propertyTitle]= element.value;
+         
       }
     });
    
