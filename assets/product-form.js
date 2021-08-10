@@ -25,7 +25,7 @@ class ProductForm extends HTMLElement {
     });
     
     const addons = [];
-    this.form.querySelectorAll('.add-ons input:checked').forEach(element => {
+    this.querySelectorAll('.add-ons input:checked').forEach(element => {
       addons.push(element.value);
     });
     console.log('Addons:',addons);
