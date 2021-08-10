@@ -23,6 +23,16 @@ class ProductForm extends HTMLElement {
          properties[propertyTitle]= element.value;         
       }
     });
+    
+    const addons = [];
+    this.form.querySelectorAll('.add-ons input:checked').forEach(element => {
+      addons.push({
+        id: element.value,
+        quantity: 1
+      });
+    });
+    console.log(addons);
+    
     const body = JSON.stringify({
       ...JSON.parse(serializeForm(this.form)),
       properties:properties,
@@ -30,10 +40,14 @@ class ProductForm extends HTMLElement {
       sections_url: window.location.pathname
     });
 
+    
     console.log('check body:', body);
     fetch(`${routes.cart_add_url}`, { ...fetchConfig('javascript'), body })
       .then((response) => response.json())
       .then((parsedState) => {
+      
+      	
+      
         this.cartNotification.renderContents(parsedState);
       })
       .catch((e) => {
