@@ -709,16 +709,13 @@ a.product__text {
 }
 
 .whatever{
-    background-color: red;
-    display: inline-block;
-    width: 100px;
-    height: 100px;
+    display: block;
 }
 
 .add-ons input[type=checkbox]{
-    display: none;
+/*     display: none; */
 }
 
 .add-ons input[type=checkbox]:checked + .whatever{
-    background-color: green;
+/*     background-color: green; */
 }
