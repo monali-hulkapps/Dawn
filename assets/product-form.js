@@ -27,7 +27,7 @@ class ProductForm extends HTMLElement {
     const addons = [];
     document.querySelectorAll('.add-ons input:checked').forEach(element => {
       addons.push({
-        id: parseInt(element.value),
+        id: element.value,
         quantity: 1
       });
     });
@@ -46,9 +46,15 @@ class ProductForm extends HTMLElement {
       .then((response) => response.json())
       .then((parsedState) => {
       
-      addons.forEach(element => {
+      document.querySelectorAll('.add-ons input:checked').forEach(element => {
       	console.log(element);
-        fetch(`${routes.cart_add_url}`, { ...fetchConfig('javascript'), element})
+        
+        var data_ajax = {
+          "quantity": 1,
+          "id": element.value
+        }
+        
+        fetch(`${routes.cart_add_url}`, { ...fetchConfig('javascript'), data_ajax})
          .then((response) => response.json())
       	 .then((parsedState) => {
           
