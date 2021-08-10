@@ -258,7 +258,10 @@
         
         <div class="add-ons">
           {% assign addonHandles = product.metafields.product.addon_handles | split:',' %}
-          {{addonHandles}}------
+          {% for product in addonHandles %}
+          	{{product}}-------------
+          {% endfor %}
+          
         	 <input type="checkbox" name="rGroup" value="1" id="r1" checked="checked" />
     <label class="whatever" for="r1"></label>
         </div>
