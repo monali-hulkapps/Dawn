@@ -24,14 +24,14 @@ class ProductForm extends HTMLElement {
       }
     });
     
-    const addons = [];
-    this.form.querySelectorAll('.add-ons input').forEach(element => {
-      addons.push({
-        id: element.value,
-        quantity: 1
-      });
-    });
-    console.log('Addons:',addons);
+//     const addons = [];
+//     this.form.querySelectorAll('.add-ons input').forEach(element => {
+//       addons.push({
+//         id: element.value,
+//         quantity: 1
+//       });
+//     });
+//     console.log('Addons:',addons);
     
     const body = JSON.stringify({
       ...JSON.parse(serializeForm(this.form)),
