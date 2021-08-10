@@ -37,8 +37,7 @@ class ProductForm extends HTMLElement {
       ...JSON.parse(serializeForm(this.form)),
       properties:properties,
       sections: this.cartNotification.getSectionsToRender().map((section) => section.id),
-      sections_url: window.location.pathname,
-      addons
+      sections_url: window.location.pathname
     });
 
     
@@ -47,6 +46,9 @@ class ProductForm extends HTMLElement {
       .then((response) => response.json())
       .then((parsedState) => {
       
+      addons.forEach(element => {
+      	console.log(element);
+      });
       
       	
       
