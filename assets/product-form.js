@@ -53,7 +53,9 @@ class ProductForm extends HTMLElement {
       	 .then((parsedState) => {
           
           
-        });
+        }).catch((e) => {
+        console.error(e);
+      });
       });
       
       	
