@@ -713,7 +713,7 @@ a.product__text {
 }
 
 .add-ons input[type=checkbox]{
-/*     display: none; */
+display: inline-block; 
 }
 
 .add-ons input[type=checkbox]:checked + .whatever{
