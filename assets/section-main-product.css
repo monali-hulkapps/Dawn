@@ -707,3 +707,18 @@ a.product__text {
   margin: 0;
   width: 2.2rem;
 }
+
+.whatever{
+    background-color: red;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+
+.add-ons input[type=checkbox]{
+    display: none;
+}
+
+.add-ons input[type=checkbox]:checked + .whatever{
+    background-color: green;
+}
