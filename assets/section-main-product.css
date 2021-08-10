@@ -709,7 +709,7 @@ a.product__text {
 }
 
 .whatever{
-    display: block;
+    display: inline-block;
 }
 
 .add-ons input[type=checkbox]{
