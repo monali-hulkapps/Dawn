@@ -48,6 +48,12 @@ class ProductForm extends HTMLElement {
       
       addons.forEach(element => {
       	console.log(element);
+        fetch(`${routes.cart_add_url}`, { ...fetchConfig('javascript'), element })
+         .then((response) => response.json())
+      	 .then((parsedState) => {
+          
+          
+        });
       });
       
       	
