@@ -38,7 +38,7 @@ class ProductForm extends HTMLElement {
       properties:properties,
       sections: this.cartNotification.getSectionsToRender().map((section) => section.id),
       sections_url: window.location.pathname,
-      ...JSON.parse(addons)
+      addons
     });
 
     
