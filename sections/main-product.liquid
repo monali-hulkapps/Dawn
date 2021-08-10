@@ -260,7 +260,7 @@
           {% assign addonHandles = product.metafields.product.addon_handles | split:',' %}
           {% for addon in addonHandles %}
           	{% assign addonhandle = all_products[addon] %}
-          	<input type="checkbox" name="{{addonhandle.handle}}" value="{{addonhandle.selected_or_first_available_variant}}" id="r{{forloop.index}}" checked="checked" />
+          	<input type="checkbox" name="addon" value="{{addonhandle.selected_or_first_available_variant}}" id="r{{forloop.index}}"  />
     		<label class="whatever" for="r{{forloop.index}}">{{addonhandle.title}}</label>
           {% endfor %}
         </div>
