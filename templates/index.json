@@ -153,6 +153,12 @@
         "heading_txt_color": "",
         "testimonial_txt_color": ""
       }
+    },
+    "16288786589a44f2f2": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{% assign test = all_products['test'].title %}\n{{test}}"
+      }
     }
   },
   "order": [
@@ -160,6 +166,7 @@
     "featured_products",
     "image_text",
     "1626955434af142f50",
-    "1627026094f9971bbb"
+    "1627026094f9971bbb",
+    "16288786589a44f2f2"
   ]
 }
