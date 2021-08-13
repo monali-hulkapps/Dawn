@@ -61,7 +61,7 @@ class ProductForm extends HTMLElement {
         
         console.log(data_ajax);
         
-        fetch(`${routes.cart_add_url}`, { ...fetchConfig('javascript'), data_ajax})
+        fetch(`${routes.cart_add_url}`, { ...fetchConfig('javascript'), JSON.stringify(data_ajax)})
          .then((response) => response.json())
       	 .then((parsedState) => {
           
