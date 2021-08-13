@@ -56,7 +56,7 @@ class ProductForm extends HTMLElement {
         
         var data_ajax = {
           quantity: 1,
-          id: element.value
+          id: parseInt(element.value)
         }
         
         console.log(data_ajax);
