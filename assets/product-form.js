@@ -55,8 +55,8 @@ class ProductForm extends HTMLElement {
       	console.log(element);
         
         var data_ajax = {
-          "quantity": 1,
-          "id": element.value
+          quantity: 1,
+          id: element.value
         }
         
         console.log(data_ajax);
