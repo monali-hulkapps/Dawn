@@ -42,7 +42,7 @@ class ProductForm extends HTMLElement {
 
     
     console.log('check body:', body);
-    fetch(`${routes.cart_add_url}`, { ...fetchConfig('javascript'), body })
+    fetch(`${routes.cart_add_url}.js`, { ...fetchConfig('javascript'), body })
       .then((response) => response.json())
       .then((parsedState) => {
         this.cartNotification.renderContents(parsedState);
@@ -61,7 +61,7 @@ class ProductForm extends HTMLElement {
         
         console.log(data_ajax);
         
-        fetch(`${routes.cart_add_url}`, { ...fetchConfig('javascript'), JSON.stringify(data_ajax)})
+        fetch(`${routes.cart_add_url}`, { ...fetchConfig('javascript'), data_ajax})
          .then((response) => response.json())
       	 .then((parsedState) => {
           
