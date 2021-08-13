@@ -54,11 +54,13 @@ class ProductForm extends HTMLElement {
                document.querySelectorAll('.add-ons input:checked').forEach(element => {
       	console.log(element);
         
-        var data_ajax = {
-          quantity: 1,
-          id: parseInt(element.value)
-        }
-        
+        let formData = {
+         'items': [{
+          'id': parseInt(element.value),
+          'quantity': 1
+          }]
+        };
+      let data_ajax =JSON.stringify(formData) 
         console.log(data_ajax);
         
         fetch(`${routes.cart_add_url}.js`, { ...fetchConfig('javascript'), data_ajax})
