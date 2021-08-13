@@ -82,7 +82,8 @@ class ProductForm extends HTMLElement {
           body: JSON.stringify(formData)
         })
         .then(response => {
-          return response.json();
+          this.cartNotification.renderContents(parsedState);
+          return response.json();          
         })
         .catch((error) => {
           console.error('Error:', error);
