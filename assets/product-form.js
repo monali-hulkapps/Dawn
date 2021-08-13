@@ -45,33 +45,57 @@ class ProductForm extends HTMLElement {
     fetch(`${routes.cart_add_url}`, { ...fetchConfig('javascript'), body })
       .then((response) => response.json())
       .then((parsedState) => {
+      
+//       document.querySelectorAll('.add-ons input:checked').forEach(element => {
+//       	console.log(element);
+        
+//         var data_ajax = {
+//           "quantity": 1,
+//           "id": element.value
+//         }
+        
+        
+        
+//         fetch(`${routes.cart_add_url}`, { ...fetchConfig('javascript'), data_ajax})
+//          .then((response) => response.json())
+//       	 .then((parsedState) => {
+          
+          
+//         }).catch((e) => {
+//            console.error(e);
+//       	});
+//       });
+      
+      document.querySelectorAll('.add-ons input:checked').forEach(element => {
+      let formData = {
+         'items': [{
+          'id': element.value,
+          'quantity': 1
+          }]
+        };
+
+        fetch('/cart/add.js', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(formData)
+        })
+        .then(response => {
+          return response.json();
+        })
+        .catch((error) => {
+          console.error('Error:', error);
+        });
+      });
+      	
+      
         this.cartNotification.renderContents(parsedState);
       })
       .catch((e) => {
         console.error(e);
       })
       .finally(() => {
-               document.querySelectorAll('.add-ons input:checked').forEach(element => {
-      	console.log(element);
-        
-        let formData = {
-         'items': [{
-          'id': parseInt(element.value),
-          'quantity': 1
-          }]
-        };
-      let data_ajax =JSON.stringify(formData) 
-        console.log(data_ajax);
-        
-        fetch(`${routes.cart_add_url}.js`, { ...fetchConfig('javascript'), data_ajax})
-         .then((response) => response.json())
-      	 .then((parsedState) => {
-          
-          
-        }).catch((e) => {
-           console.error(e);
-      	});
-      });
         submitButton.classList.remove('loading');
         submitButton.removeAttribute('disabled');
       });
