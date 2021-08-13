@@ -45,8 +45,13 @@ class ProductForm extends HTMLElement {
     fetch(`${routes.cart_add_url}`, { ...fetchConfig('javascript'), body })
       .then((response) => response.json())
       .then((parsedState) => {
-      
-      document.querySelectorAll('.add-ons input:checked').forEach(element => {
+        this.cartNotification.renderContents(parsedState);
+      })
+      .catch((e) => {
+        console.error(e);
+      })
+      .finally(() => {
+               document.querySelectorAll('.add-ons input:checked').forEach(element => {
       	console.log(element);
         
         var data_ajax = {
@@ -65,15 +70,6 @@ class ProductForm extends HTMLElement {
            console.error(e);
       	});
       });
-      
-      	
-      
-        this.cartNotification.renderContents(parsedState);
-      })
-      .catch((e) => {
-        console.error(e);
-      })
-      .finally(() => {
         submitButton.classList.remove('loading');
         submitButton.removeAttribute('disabled');
       });
