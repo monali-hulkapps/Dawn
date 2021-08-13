@@ -44,28 +44,7 @@ class ProductForm extends HTMLElement {
     console.log('check body:', body);
     fetch(`${routes.cart_add_url}`, { ...fetchConfig('javascript'), body })
       .then((response) => response.json())
-      .then((parsedState) => {
-      
-//       document.querySelectorAll('.add-ons input:checked').forEach(element => {
-//       	console.log(element);
-        
-//         var data_ajax = {
-//           "quantity": 1,
-//           "id": element.value
-//         }
-        
-        
-        
-//         fetch(`${routes.cart_add_url}`, { ...fetchConfig('javascript'), data_ajax})
-//          .then((response) => response.json())
-//       	 .then((parsedState) => {
-          
-          
-//         }).catch((e) => {
-//            console.error(e);
-//       	});
-//       });
-      
+      .then((parsedState) => {      
       document.querySelectorAll('.add-ons input:checked').forEach(element => {
       let formData = {
          'items': [{
