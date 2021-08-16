@@ -270,8 +270,10 @@
         {% when 'bundle' %}
         {%- liquid
         	 for tag in product.tags
-        	assign collectionBundle = tag
-        	endfor
+             	if tag contains 'bundle-collection_'
+        	 		assign collectionBundle = tag
+                endif
+        	 endfor
         -%}
         {{collectionBundle}}
         <div></div>
