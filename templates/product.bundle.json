@@ -53,6 +53,12 @@
           "type": "share",
           "settings": {
           }
+        },
+        "9944f7e6-2ae6-48cf-b34a-d617b70ab276": {
+          "type": "bundle",
+          "settings": {
+            "enable_bundle": true
+          }
         }
       },
       "block_order": [
@@ -64,7 +70,8 @@
         "quantity_selector",
         "buy_buttons",
         "description",
-        "share"
+        "share",
+        "9944f7e6-2ae6-48cf-b34a-d617b70ab276"
       ],
       "settings": {
         "enable_sticky_info": true,
