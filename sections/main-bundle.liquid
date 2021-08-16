@@ -268,7 +268,11 @@
         </div>
         
         {% when 'bundle' %}
-        
+        {%- liquid
+        	 for tag in product.tags
+        	assign collectionBundle = tag
+        	endfor
+        -%}
         <div></div>
         
         
