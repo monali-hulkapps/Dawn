@@ -271,7 +271,7 @@
         {%- liquid
         	 for tag in product.tags
              	if tag contains 'bundle-collection_'
-        	 		assign collectionBundle = tag
+        	 		assign collectionBundle = tag | remove:'bundle-collection_'
                 endif
         	 endfor
         -%}
