@@ -121,11 +121,13 @@
       "blocks": {
         "309ab070-6f65-45bb-9b8e-5597e1fed28a": {
           "type": "shopify:\/\/apps\/product-reviews-dev\/blocks\/review-list\/b969e0d5-de59-422f-9639-d17bf8a9c147",
+          "disabled": true,
           "settings": {
           }
         },
         "c1dd845f-6b7c-4f31-aff0-2c078f968c15": {
           "type": "shopify:\/\/apps\/product-reviews-dev\/blocks\/review-list\/b969e0d5-de59-422f-9639-d17bf8a9c147",
+          "disabled": true,
           "settings": {
           }
         },
