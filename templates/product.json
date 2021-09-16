@@ -94,10 +94,22 @@
           "type": "shopify:\/\/apps\/product-reviews-dev\/blocks\/review-list\/b969e0d5-de59-422f-9639-d17bf8a9c147",
           "settings": {
           }
+        },
+        "ac51de1f-7a19-4f2d-8b73-7a610d936926": {
+          "type": "shopify:\/\/apps\/product-reviews-dev\/blocks\/review-list\/b969e0d5-de59-422f-9639-d17bf8a9c147",
+          "settings": {
+          }
+        },
+        "7c7ce137-c3e4-4ffa-8b55-7cfb74c33380": {
+          "type": "shopify:\/\/apps\/product-reviews-dev\/blocks\/average-review\/b969e0d5-de59-422f-9639-d17bf8a9c147",
+          "settings": {
+          }
         }
       },
       "block_order": [
-        "b00fc0f4-b584-4313-9d30-86d9c00a3c12"
+        "b00fc0f4-b584-4313-9d30-86d9c00a3c12",
+        "ac51de1f-7a19-4f2d-8b73-7a610d936926",
+        "7c7ce137-c3e4-4ffa-8b55-7cfb74c33380"
       ],
       "settings": {
         "include_margins": true
