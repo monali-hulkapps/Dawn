@@ -102,6 +102,7 @@
         },
         "7c7ce137-c3e4-4ffa-8b55-7cfb74c33380": {
           "type": "shopify:\/\/apps\/product-reviews-dev\/blocks\/average-review\/b969e0d5-de59-422f-9639-d17bf8a9c147",
+          "disabled": true,
           "settings": {
           }
         }
