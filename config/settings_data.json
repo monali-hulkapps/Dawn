@@ -67,6 +67,14 @@
     },
     "content_for_index": [
 
-    ]
+    ],
+    "blocks": {
+      "1631789975787c8dea": {
+        "type": "shopify:\/\/apps\/product-reviews-dev\/blocks\/app\/b969e0d5-de59-422f-9639-d17bf8a9c147",
+        "disabled": false,
+        "settings": {
+        }
+      }
+    }
   }
 }
