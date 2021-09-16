@@ -128,11 +128,23 @@
           "type": "shopify:\/\/apps\/product-reviews-dev\/blocks\/review-list\/b969e0d5-de59-422f-9639-d17bf8a9c147",
           "settings": {
           }
+        },
+        "ab2553a5-0df2-4e36-a328-d61686525eab": {
+          "type": "shopify:\/\/apps\/product-reviews-dev\/blocks\/average-review\/b969e0d5-de59-422f-9639-d17bf8a9c147",
+          "settings": {
+          }
+        },
+        "6d9eb410-e8bb-452d-bac7-561871853c91": {
+          "type": "shopify:\/\/apps\/product-reviews-dev\/blocks\/average-review\/b969e0d5-de59-422f-9639-d17bf8a9c147",
+          "settings": {
+          }
         }
       },
       "block_order": [
         "309ab070-6f65-45bb-9b8e-5597e1fed28a",
-        "c1dd845f-6b7c-4f31-aff0-2c078f968c15"
+        "c1dd845f-6b7c-4f31-aff0-2c078f968c15",
+        "ab2553a5-0df2-4e36-a328-d61686525eab",
+        "6d9eb410-e8bb-452d-bac7-561871853c91"
       ],
       "settings": {
         "include_margins": true
