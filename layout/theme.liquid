@@ -25,7 +25,7 @@
     {% render 'meta-tags' %}
 
     <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
-    {{ content_for_header }}
+    {% include 'globo.filter.script' %}{{ content_for_header }}
 
     {%- liquid
       assign body_font_bold = settings.type_body_font | font_modify: 'weight', 'bold'
@@ -146,5 +146,6 @@
         unavailable: `{{ 'products.product.unavailable' | t }}`,
       }
     </script>
-  </body>
+  {% include 'globo.filter.action' %}
+	</body>
 </html>
