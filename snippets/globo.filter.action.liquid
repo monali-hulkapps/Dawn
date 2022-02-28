@@ -1,5 +1,5 @@
 {% assign globo_search = true %}
-{% assign globo_search_overlay = true %}
+{% assign globo_search_overlay = false %}
 {%- assign home_filter = false -%}
 {%- if request.page_type != 'index' -%}{%- assign home_filter = false -%}{%- endif -%}
 {% if globo_search %}<script id="gspfSearchResult" type="template/html">{% include 'globo.filter.search' %}</script>{% endif %}

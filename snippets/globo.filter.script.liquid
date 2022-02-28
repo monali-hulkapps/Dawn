@@ -71,7 +71,7 @@
     search:{
       enable: {{globo_search}},
       zero_character_suggestion: false,
-      layout: 1,
+      layout: 2,
     },
     collection: {
       id: {%- if request.page_type == 'collection' -%}{{ collection.id | default: 0 }}{%- else -%}0{%- endif -%},
